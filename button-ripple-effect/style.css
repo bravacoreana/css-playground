@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: cornsilk;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+  padding: 12px 18px;
+  text-transform: uppercase;
+  margin: 0 5px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ripple {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  background-color: coral;
+  background-position: center;
+  color: white;
+  transition: background 0.8s;
+}
+
+.ripple:hover {
+  background-color: coral;
+  background-image: radial-gradient(circle, transparent 1%, coral 1%);
+  background-size: 15000%;
+  background-position: center;
+}
+
+.ripple:active {
+  background-color: cornsilk;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.ripple-second {
+  background-color: transparent;
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.ripple-second:hover {
+  background-image: radial-gradient(
+    circle,
+    transparent 1%,
+    rgba(0, 0, 0, 0.1) 1%
+  );
+  background-size: 15000%;
+  background-position: center;
+}
+
+.ripple-second:active {
+  background-color: rgba(0, 0, 0, 0.1);
+  background-size: 0%;
+  transition: background 0s;
+}
