@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: mediumaquamarine;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+.dots {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotation infinite 1.5s ease-in-out;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
