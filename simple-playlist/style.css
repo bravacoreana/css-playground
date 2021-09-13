@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: cornsilk;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 300px;
+  height: 500px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header i {
+  position: absolute;
+  left: 0px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.current-playlist {
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.current-playlist .playlist--cover {
+  width: 100px;
+  height: 100px;
+}
+
+.current-playlist .playlist--cover--img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.current-playlist .playlist--detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  align-items: stretch;
+}
+.current-playlist .playlist--detail .title {
+  font-size: 24px;
+}
+.current-playlist .playlist--detail .artist {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn--play {
+  border-radius: 10px;
+  padding: 12px 50px;
+}
+.btn--heart {
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.btn--plus {
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.next-playlists {
+  margin-top: 40px;
+  overflow-y: scroll;
+  height: 50%;
+  padding: 10px;
+}
+.next-playlist {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.next-playlist--cover {
+  display: flex;
+}
+
+.next-playlist--cover--img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.next-playlist--detail {
+  margin-left: 15px;
+}
+.next-playlist--detail .title {
+  font-size: 18px;
+}
+.next-playlist--detail .artist {
+  font-size: 12px;
+  margin-top: 4px;
+}
