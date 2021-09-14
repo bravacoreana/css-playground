@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 350px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  width: inherit;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffd1c7;
+}
+.search-bar {
+  width: 100%;
+  padding: 0px 20px;
+  position: relative;
+}
+.search-bar-input {
+  position: inherit;
+  bottom: 10px;
+  width: 100%;
+  padding: 7px 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 0.2px 0.2px 10px rgba(0, 0, 0, 0.2);
+}
+.main {
+  padding: 20px;
+  margin-top: 80px;
+}
+.content {
+  display: flex;
+}
+.content__left {
+  width: 120px;
+}
+.content__left--cover {
+  width: 100%;
+  border-radius: 10px;
+}
+.content__right {
+  margin-left: 10px;
+  flex-grow: 1;
+}
+.detail {
+  margin-bottom: 5px;
+}
+.content__right--detail {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.fa-star {
+  color: #f2f203;
+}
+.content-right--detail__title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.content-right--detail__author {
+  font-size: 15px;
+}
+.content__right--btn-middle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.content__right--btn-middle__button {
+  display: flex;
+  padding: 4% 8%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+}
+.content__right--btn-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.bottom {
+  padding: 20px;
+}
+
+.content__right--btn-bottom__bookmark {
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+.content__right--btn-bottom__button {
+  display: flex;
+  padding: 4% 15%;
+  border-radius: 10px;
+  background-color: black;
+  color: #fff;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  align-items: center;
+}
+.bottom-contents {
+  display: flex;
+  overflow-x: scroll;
+}
+.bottom-content {
+  width: 80px;
+  margin-right: 20px;
+}
+.bottom-content--cover {
+  width: 80px;
+}
+
+.bottom-content--stars {
+  margin-top: 10px;
+  font-size: 10px;
+  text-align: center;
+}
