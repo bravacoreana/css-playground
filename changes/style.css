@@ -1,0 +1,128 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 25px;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.option {
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.searchBar {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 60%;
+  width: 95%;
+  grid-column: span 2 / 4;
+  border-radius: 3px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.box {
+  padding: 10px;
+}
+
+.box:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.upsidedown {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.text {
+  max-width: 100px;
+  font-size: 18px;
+  width: fit-content;
+}
+
+#date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rotate:nth-child(2) {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.box:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: blueviolet;
+}
+
+.box:nth-child(3) {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  background-color: red;
+}
+
+.box:nth-child(5) {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-color: gold;
+}
+
+.box:nth-child(6) {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+
+.box:nth-child(7) {
+  grid-column: 4/4;
+  grid-row: 1/4;
+}
+
+h6 {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.name {
+  display: block;
+  line-height: 1.4;
+}
+
+.highlight {
+  background-color: blueviolet;
+}
